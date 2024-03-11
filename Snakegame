@@ -1,0 +1,19 @@
+import javax.swing.*;
+
+public class SnakeGame extends JFrame {
+
+    SnakeGame(){
+        super("Snake Game");
+        add(new Board());
+        pack();
+// pack() function is used to refresh the page even when it is open.
+
+        setLocationRelativeTo(null);
+        setResizable(false);
+        setVisible(true);
+
+    }
+    public static void main(String[] args) {
+        new SnakeGame();
+    }
+}
